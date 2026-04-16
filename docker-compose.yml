@@ -22,7 +22,6 @@ services:
     ports:
       - 9100:9100
 
-
   nginx:
     image: nginx:stable-alpine
     ports:
@@ -78,5 +77,6 @@ services:
     ports:
       - "3100:3100"
     command: -config.file=/etc/loki/local-config.yaml
+
 volumes:
   prometheus-data:
